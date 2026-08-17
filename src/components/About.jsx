@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImg from '../assets/hero.png';
 import { Coffee, Flame, ShieldCheck, HeartHandshake, Award, MapPin } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/menuData';
 
@@ -40,7 +41,7 @@ export default function About() {
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden border border-amber-500/30 shadow-2xl glass-card">
               <img
-                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80"
+                src={heroImg}
                 alt="Tandoor Chowk Restaurant Ambiance"
                 className="w-full h-[400px] object-cover"
               />

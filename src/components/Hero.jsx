@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImage from '../assets/hero.png';
 import { Flame, Coffee, Phone, MessageSquare, ArrowRight, Star, MapPin, Sparkles, ShieldCheck } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/menuData';
 
@@ -104,7 +105,7 @@ export default function Hero({ onExploreMenu }) {
               {/* Glass Image Container */}
               <div className="relative rounded-3xl overflow-hidden border border-amber-500/50 bg-zinc-900 shadow-2xl">
                 <img
-                  src="/hero.png"
+                  src={heroImage}
                   alt="Tandoor Chowk Kulhad Chai and Tandoori Tikka"
                   className="w-full h-[450px] sm:h-[500px] object-cover hover:scale-105 transition-transform duration-700"
                 />
