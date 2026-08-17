@@ -17,7 +17,6 @@ export default function Navbar({ cartCount, onOpenCart, onOpenBooking }) {
   const navLinks = [
     { name: 'Home', href: '#hero' },
     { name: 'Dishes & Menu', href: '#menu' },
-    { name: 'Special Combos', href: '#combos' },
     { name: 'About Story', href: '#about' },
     { name: 'Customer Reviews', href: '#reviews' },
     { name: 'Contact & Location', href: '#contact' },

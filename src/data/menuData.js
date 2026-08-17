@@ -1,25 +1,29 @@
-import heroImg from '../assets/hero.png';
-import chaiImg from '../assets/kulhad_chai.png';
+import chaiImg from '../assets/chai.png';
+import coffeeImg from '../assets/coffee.png';
+import sandwichImg from '../assets/sandwich.png';
+import burgerImg from '../assets/burger.png';
+import mocktailImg from '../assets/mocktail.png';
+import fingerChipsImg from '../assets/finger_chips.png';
 
 export const MENU_CATEGORIES = [
-  { id: 'all', name: 'All Dishes & Teas', icon: 'Utensils' },
-  { id: 'tea', name: 'Kulhad Tea Special', icon: 'Coffee' },
-  { id: 'tandoori', name: 'Tandoori Snacks', icon: 'Flame' },
-  { id: 'chaat', name: 'Street Chaat & Bites', icon: 'Cookie' },
-  { id: 'combos', name: 'Special Combos', icon: 'Gift' },
-  { id: 'beverages', name: 'Cool Beverages & Shakes', icon: 'Wine' }
+  { id: 'all', name: 'All 6 Dishes', icon: 'Utensils' },
+  { id: 'tea', name: 'Kulhad Tea', icon: 'Coffee' },
+  { id: 'coffee', name: 'Coffee', icon: 'Coffee' },
+  { id: 'sandwich', name: 'Sandwich', icon: 'Utensils' },
+  { id: 'burger', name: 'Burger', icon: 'Flame' },
+  { id: 'mocktails', name: 'Mocktails', icon: 'Wine' },
+  { id: 'chips', name: 'Finger Chips', icon: 'Cookie' }
 ];
 
 export const MENU_ITEMS = [
-  // KULHAD TEA SPECIAL
   {
-    id: 't1',
+    id: 'd1',
     name: 'Special Kulhad Masala Chai',
     category: 'tea',
     price: 30,
-    rating: 4.9,
-    reviewsCount: 340,
-    description: 'Freshly brewed thick milk tea infused with cardamom, ginger, cloves, and secret spices served piping hot in an authentic earthen clay Kulhad.',
+    rating: 4.95,
+    reviewsCount: 420,
+    description: 'Freshly brewed thick milk tea infused with crushed ginger, cardamom, and secret spices served piping hot in an earthen Kulhad.',
     image: chaiImg,
     bestseller: true,
     veg: true,
@@ -27,330 +31,96 @@ export const MENU_ITEMS = [
     customizable: true,
     options: {
       sugar: ['Normal Sugar', 'Less Sugar', 'Sugar-Free'],
-      milk: ['Full Cream Milk', 'Double Toned Light Milk']
+      milk: ['Full Cream Milk', 'Double Toned Milk']
     }
   },
   {
-    id: 't2',
-    name: 'Tandoori Smoked Kulhad Chai',
-    category: 'tea',
-    price: 40,
-    rating: 4.95,
-    reviewsCount: 420,
-    description: 'Chai poured into red-hot kulhad roasted inside live charcoal tandoor, giving it a smoky earthen aroma and unforgettable rich taste.',
-    image: chaiImg,
-    bestseller: true,
-    veg: true,
-    spiceLevel: 0,
-    customizable: true,
-    options: {
-      sugar: ['Normal Sugar', 'Less Sugar', 'Sugar-Free']
-    }
-  },
-  {
-    id: 't3',
-    name: 'Kadak Adrak Elaichi Chai',
-    category: 'tea',
-    price: 25,
-    rating: 4.8,
-    reviewsCount: 190,
-    description: 'Strong tea pounded with crushed fresh ginger root and green cardamoms for instant energy.',
-    image: chaiImg,
-    bestseller: false,
-    veg: true,
-    spiceLevel: 0,
-    customizable: true,
-    options: {
-      sugar: ['Normal Sugar', 'Less Sugar', 'Sugar-Free']
-    }
-  },
-  {
-    id: 't4',
-    name: 'Kashmiri Saffron Kahwa',
-    category: 'tea',
-    price: 60,
-    rating: 4.9,
-    reviewsCount: 110,
-    description: 'Exotic green tea simmered with pure Kashmiri saffron strands, crushed almonds, cinnamon, and cardamom.',
-    image: chaiImg,
-    bestseller: false,
-    veg: true,
-    spiceLevel: 0,
-    customizable: false
-  },
-  {
-    id: 't5',
-    name: 'Desi Rose Kulhad Chai',
-    category: 'tea',
-    price: 35,
-    rating: 4.7,
-    reviewsCount: 95,
-    description: 'Creamy chai delicately scented with organic dried rose petals and sweet rose essence.',
-    image: chaiImg,
-    bestseller: false,
-    veg: true,
-    spiceLevel: 0,
-    customizable: true,
-    options: {
-      sugar: ['Normal Sugar', 'Less Sugar']
-    }
-  },
-
-  // TANDOORI SNACKS
-  {
-    id: 's1',
-    name: 'Tandoori Paneer Tikka (8 pcs)',
-    category: 'tandoori',
-    price: 190,
-    rating: 4.95,
-    reviewsCount: 510,
-    description: 'Fresh Cottage Cheese cubes marinated in thick spiced hung curd, yellow mustard oil, and tandoori spices, char-grilled to perfection with bell peppers.',
-    image: heroImg,
-    bestseller: true,
-    veg: true,
-    spiceLevel: 2,
-    customizable: true,
-    options: {
-      spice: ['Medium Spicy', 'Extra Spicy', 'Mild'],
-      chutney: ['Extra Mint Chutney (+₹10)', 'Normal Chutney']
-    }
-  },
-  {
-    id: 's2',
-    name: 'Tandoori Malai Soya Chaap',
-    category: 'tandoori',
-    price: 180,
-    rating: 4.9,
-    reviewsCount: 380,
-    description: 'Tender Soya Chaap marinated in rich cashew paste, fresh cream, butter, and black pepper, grilled in charcoal oven with a velvety finish.',
-    image: heroImg,
-    bestseller: true,
-    veg: true,
-    spiceLevel: 1,
-    customizable: true,
-    options: {
-      sauce: ['Extra Butter & Cream', 'Normal Cream']
-    }
-  },
-  {
-    id: 's3',
-    name: 'Tandoori Stuffed Mushroom Tikka',
-    category: 'tandoori',
-    price: 210,
-    rating: 4.85,
-    reviewsCount: 160,
-    description: 'Button mushrooms stuffed with spiced cheese & paneer mash, skewered and roasted over open flames with a smoky outer glaze.',
-    image: heroImg,
-    bestseller: false,
-    veg: true,
-    spiceLevel: 2,
-    customizable: false
-  },
-  {
-    id: 's4',
-    name: 'Veg Seekh Kebab (6 pcs)',
-    category: 'tandoori',
-    price: 160,
-    rating: 4.75,
-    reviewsCount: 210,
-    description: 'Minced fresh vegetables, potatoes, chana dal, and aromatic royal Indian herbs wrapped on skewers and tandoor grilled.',
-    image: heroImg,
-    bestseller: false,
-    veg: true,
-    spiceLevel: 2,
-    customizable: false
-  },
-  {
-    id: 's5',
-    name: 'Tandoori Garlic Naan Roll (Paneer)',
-    category: 'tandoori',
-    price: 140,
-    rating: 4.88,
-    reviewsCount: 290,
-    description: 'Fresh tandoori garlic naan stuffed with smoky paneer tikka, crunchy onions, and spicy mint mayo wrap.',
-    image: heroImg,
-    bestseller: true,
-    veg: true,
-    spiceLevel: 2,
-    customizable: true,
-    options: {
-      cheese: ['Add Amul Cheese (+₹25)', 'No Extra Cheese']
-    }
-  },
-
-  // STREET CHAAT & BITES
-  {
-    id: 'c1',
-    name: 'Classic Amul Maska Bun',
-    category: 'chaat',
-    price: 45,
-    rating: 4.8,
-    reviewsCount: 620,
-    description: 'Ultra soft bakery bun toasted with generous layer of yellow Amul butter, perfect dip companion for Kulhad Chai.',
-    image: chaiImg,
-    bestseller: true,
-    veg: true,
-    spiceLevel: 0,
-    customizable: true,
-    options: {
-      topping: ['Add Tutti Frutti / Jam (+₹10)', 'Plain Amul Butter']
-    }
-  },
-  {
-    id: 'c2',
-    name: 'Crispy Samosa with Spicy Chole (2 pcs)',
-    category: 'chaat',
-    price: 60,
-    rating: 4.9,
-    reviewsCount: 450,
-    description: 'Golden crust potato samosas crushed and topped with tangy Amritsari chole, tamarind chutney, mint sauce, and chopped onions.',
-    image: heroImg,
-    bestseller: true,
-    veg: true,
-    spiceLevel: 2,
-    customizable: true,
-    options: {
-      curd: ['Add Dahi / Curd (+₹15)', 'Without Curd']
-    }
-  },
-  {
-    id: 'c3',
-    name: 'Kurkuri Veg Fried Momos (8 pcs)',
-    category: 'chaat',
-    price: 110,
-    rating: 4.85,
-    reviewsCount: 320,
-    description: 'Extra crunchy cornflake coated vegetable dumpling snacks served with fiery red garlic sauce.',
-    image: heroImg,
-    bestseller: true,
-    veg: true,
-    spiceLevel: 3,
-    customizable: false
-  },
-  {
-    id: 'c4',
-    name: 'Desi Paneer Pakora Platter (6 pcs)',
-    category: 'chaat',
-    price: 130,
-    rating: 4.7,
-    reviewsCount: 180,
-    description: 'Thick paneer slabs layered with green chutney, dipped in spiced besan batter, fried crisp and sprinkled with chaat masala.',
-    image: heroImg,
-    bestseller: false,
-    veg: true,
-    spiceLevel: 1,
-    customizable: false
-  },
-  {
-    id: 'c5',
-    name: 'Cheese Corn Balls (6 pcs)',
-    category: 'chaat',
-    price: 120,
-    rating: 4.82,
-    reviewsCount: 140,
-    description: 'Melt-in-mouth mozzarella cheese and sweet corn crispy croquettes served with spicy dip.',
-    image: heroImg,
-    bestseller: false,
-    veg: true,
-    spiceLevel: 0,
-    customizable: false
-  },
-
-  // SPECIAL COMBOS
-  {
-    id: 'cb1',
-    name: 'Chowk Special Chai & Maska Bun Combo',
-    category: 'combos',
-    price: 70,
-    rating: 4.98,
-    reviewsCount: 780,
-    description: '1x Special Kulhad Masala Chai + 1x Fresh Amul Maska Bun. The ultimate Chandauli evening refreshment combo!',
-    image: chaiImg,
-    bestseller: true,
-    veg: true,
-    spiceLevel: 0,
-    customizable: true,
-    options: {
-      sugar: ['Normal Sugar', 'Less Sugar']
-    }
-  },
-  {
-    id: 'cb2',
-    name: 'Tandoori Feast Platter + 2 Kulhad Chais',
-    category: 'combos',
-    price: 340,
-    rating: 4.95,
-    reviewsCount: 410,
-    description: '4 pcs Paneer Tikka + 4 pcs Malai Soya Chaap + 2 Seekh Kebabs + Mint Chutney + 2x Hot Kulhad Masala Chais.',
-    image: heroImg,
-    bestseller: true,
-    veg: true,
-    spiceLevel: 2,
-    customizable: false
-  },
-  {
-    id: 'cb3',
-    name: 'Chandauli Evening Snack Basket',
-    category: 'combos',
-    price: 220,
-    rating: 4.88,
-    reviewsCount: 230,
-    description: '2x Samosa Chole Chaat + 1x Paneer Naan Roll + 2x Kulhad Masala Chais. Perfect for friends & family.',
-    image: heroImg,
-    bestseller: false,
-    veg: true,
-    spiceLevel: 2,
-    customizable: false
-  },
-
-  // BEVERAGES
-  {
-    id: 'b1',
-    name: 'Royal Kesaria Thandai in Kulhad',
-    category: 'beverages',
+    id: 'd2',
+    name: 'Cold Coffee with Vanilla Scoop',
+    category: 'coffee',
     price: 80,
     rating: 4.9,
-    reviewsCount: 270,
-    description: 'Traditional chilled milk drink blended with saffron, almonds, pistachios, watermelon seeds, and rose petals.',
-    image: chaiImg,
+    reviewsCount: 310,
+    description: 'Thick espresso blended cold coffee crowned with a creamy scoop of vanilla ice cream and chocolate syrup drizzle.',
+    image: coffeeImg,
     bestseller: true,
     veg: true,
     spiceLevel: 0,
-    customizable: false
+    customizable: true,
+    options: {
+      ice: ['Normal Ice', 'Less Ice', 'No Ice']
+    }
   },
   {
-    id: 'b2',
-    name: 'Kulhad Meethi Malai Lassi',
-    category: 'beverages',
-    price: 70,
-    rating: 4.92,
-    reviewsCount: 390,
-    description: 'Rich churned sweet yogurt drink topped with thick rabri, chopped dry fruits, and kewra water in earthen pot.',
-    image: chaiImg,
+    id: 'd3',
+    name: 'Grilled Cheese Club Sandwich',
+    category: 'sandwich',
+    price: 110,
+    rating: 4.88,
+    reviewsCount: 290,
+    description: 'Toasted triple-layer sandwich stuffed with melting mozzarella cheese, fresh lettuce, tomatoes, cucumbers, and special green chutney.',
+    image: sandwichImg,
     bestseller: true,
     veg: true,
-    spiceLevel: 0,
-    customizable: false
+    spiceLevel: 1,
+    customizable: true,
+    options: {
+      cheese: ['Extra Cheese (+₹25)', 'Normal Cheese']
+    }
   },
   {
-    id: 'b3',
-    name: 'Cold Coffee with Vanilla Scoop',
-    category: 'beverages',
+    id: 'd4',
+    name: 'Crispy Veg Tandoori Burger',
+    category: 'burger',
     price: 90,
-    rating: 4.8,
-    reviewsCount: 210,
-    description: 'Thick espresso blended cold coffee crowned with a rich scoop of vanilla ice cream and chocolate syrup.',
-    image: chaiImg,
-    bestseller: false,
+    rating: 4.92,
+    reviewsCount: 380,
+    description: 'Golden crispy veg patty topped with liquid cheese slice, fresh onions, tomatoes, and smoky tandoori mayo in a toasted brioche bun.',
+    image: burgerImg,
+    bestseller: true,
+    veg: true,
+    spiceLevel: 2,
+    customizable: true,
+    options: {
+      patty: ['Extra Cheese Slice (+₹20)', 'Normal Patty']
+    }
+  },
+  {
+    id: 'd5',
+    name: 'Fresh Mint Lime Mojito Mocktail',
+    category: 'mocktails',
+    price: 70,
+    rating: 4.9,
+    reviewsCount: 240,
+    description: 'Chilled sparkling mocktail muddled with garden fresh mint leaves, lemon juice, crushed ice, and sweet soda.',
+    image: mocktailImg,
+    bestseller: true,
     veg: true,
     spiceLevel: 0,
     customizable: false
+  },
+  {
+    id: 'd6',
+    name: 'Crispy Salted Finger Chips (Fries)',
+    category: 'chips',
+    price: 80,
+    rating: 4.85,
+    reviewsCount: 350,
+    description: 'Deep-fried golden potato finger chips tossed in peri peri salt masala and served with tangy tomato ketchup.',
+    image: fingerChipsImg,
+    bestseller: true,
+    veg: true,
+    spiceLevel: 1,
+    customizable: true,
+    options: {
+      seasoning: ['Peri Peri Masala', 'Classic Salted']
+    }
   }
 ];
 
 export const RESTAURANT_INFO = {
   name: 'Tandoor Chowk',
-  tagline: 'Authentic Earthen Kulhad Chai & Charcoal Tandoori Snacks',
+  tagline: 'Fresh Kulhad Chai, Coffee, Sandwiches, Burgers & Finger Chips',
   phone: '7266911274',
   whatsappNumber: '917266911274',
   address: 'Main Market Road, Near Chowk, Chandauli, Uttar Pradesh - 232104',
@@ -360,10 +130,10 @@ export const RESTAURANT_INFO = {
   deliveryMinOrder: 100,
   deliveryTime: '20-35 Mins',
   features: [
-    'Authentic Earthen Clay Kulhad',
-    'Live Charcoal Tandoor Grill',
+    'Fresh Kulhad Masala Chai & Cold Coffee',
+    'Crispy Sandwiches & Tandoori Burgers',
     'Direct 1-Click WhatsApp Ordering',
-    'Fresh Hygienic Ingredients'
+    'Fresh Hygienic Preparation'
   ]
 };
 
@@ -373,15 +143,15 @@ export const CUSTOMER_REVIEWS = [
     name: 'Rahul Verma',
     location: 'Chandauli, UP',
     rating: 5,
-    comment: 'The Kulhad Tandoori Chai at Tandoor Chowk is out of this world! Incredible smoky flavor, and their Paneer Tikka is so soft and juicy. Ordered via WhatsApp and got hot delivery in 20 minutes!',
+    comment: 'The Kulhad Chai and Grilled Cheese Sandwich at Tandoor Chowk are incredible! Ordered via WhatsApp and got hot delivery in 20 minutes!',
     date: 'Yesterday'
   },
   {
     id: 2,
     name: 'Anjali Sharma',
-    location: 'Varanasi-Chandauli Highway',
+    location: 'Chandauli Market',
     rating: 5,
-    comment: 'Best spot for evening tea and snacks in Chandauli. The Maska Bun with Kulhad Chai combo is our daily routine now. Super polite staff & 7266911274 quick ordering!',
+    comment: 'Best Cold Coffee & Veg Burger in Chandauli! Super fast 7266911274 WhatsApp ordering.',
     date: '3 days ago'
   },
   {
@@ -389,7 +159,7 @@ export const CUSTOMER_REVIEWS = [
     name: 'Vikram Singh',
     location: 'Chandauli Town',
     rating: 5,
-    comment: 'Malai Soya Chaap is unmatched! Yellow & black aesthetic vibe of the place is fancy. Truly a gem restaurant in UP.',
+    comment: 'Crispy Finger Chips and Mint Lime Mojito are top tier! Love the black and yellow vibe.',
     date: '1 week ago'
   }
 ];

@@ -108,7 +108,6 @@ export default function App() {
           onAddToCart={handleAddToCart}
           onCustomizationReq={(item) => setCustomizingItem(item)}
         />
-        <Combos onAddToCart={handleAddToCart} />
         <About />
         <Reviews />
         <Contact />

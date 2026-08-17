@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImg from '../assets/hero.png';
+import heroImg from '../assets/sandwich.png';
 import { Coffee, Flame, ShieldCheck, HeartHandshake, Award, MapPin } from 'lucide-react';
 import { RESTAURANT_INFO } from '../data/menuData';
 
